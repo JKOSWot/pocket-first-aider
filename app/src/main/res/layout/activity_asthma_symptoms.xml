@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jake.myapplication.AsthmaSymptomsActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Summary"
+        android:id="@+id/sumText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:textIsSelectable="false"
+        android:textColor="#2db92d"
+        android:textStyle="bold"
+        android:onClick="GoToAsthmaSummary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Symptoms"
+        android:id="@+id/sympText"
+        android:layout_marginStart="22dp"
+        android:layout_alignTop="@+id/sumText"
+        android:layout_toEndOf="@+id/sumText"
+        android:textAllCaps="false"
+        android:textIsSelectable="false"
+        android:textColor="#2db92d"
+        android:textStyle="bold"
+        android:onClick="GoToAsthmaSymptoms"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_selector_color"
+        android:id="@+id/asthmaEarlySymptoms"
+        android:text="Early Warning Signs
+        \n &#8226; Coughing
+        \n &#8226; Trouble Sleeping
+        \n &#8226; Losing your breath
+        \n &#8226; Feeling cranky
+        \n &#8226; Lower PEF numbers
+        \n &#8226; Hard to breath after exercise"
+        android:typeface="sans"
+        android:layout_below="@+id/sumText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_selector_color"
+        android:id="@+id/asthmaDuringSymptoms"
+        android:text="During an attack
+        \n &#8226; Short, shallow, fast breaths
+        \n &#8226; Whistling sound when breathing
+        \n &#8226; A cough that won't go away
+        \n &#8226; Squeezed feeling in the chest"
+        android:typeface="sans"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/asthmaEarlySymptoms" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_selector_color"
+        android:id="@+id/asthmaWorseSymptoms"
+        android:text="When It Gets Worse
+        \n &#8226; Feel panic
+        \n &#8226; Wheeze when breathing in and out
+        \n &#8226; Can't stop coughing
+        \n &#8226; Have trouble walking or talking
+        \n &#8226; Get tight neck and chest muscles
+        \n &#8226; Have a pale, sweaty face"
+        android:typeface="sans"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="32dp"
+        android:layout_alignEnd="@+id/asthmaEarlySymptoms" />
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jake.myapplication.EmergencyActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call 999"
+        android:id="@+id/callEmergency"
+        android:width="250dp"
+        android:height="100dp"
+        android:background="@drawable/button_border"
+        android:textColor="#ffffff"
+        android:textSize="60px"
+        android:textAllCaps="false"
+        android:layout_below="@+id/callEmText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/callEmText"
+        android:layout_marginTop="18dp"
+        android:text="If you believe the situation is beyond your control and you feel you cannot administer First Aid, please:"
+        android:width="1000dp"
+        android:textSize="7pt"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:width="1000dp"
+        android:textSize="7pt"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:background="@android:color/transparent"
+        android:text="However if you feel you can administer First Aid or you would like more information if the situation is not life threatening then please:"
+        android:layout_above="@+id/callNonEmergency"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call 111"
+        android:id="@+id/callNonEmergency"
+        android:width="250dp"
+        android:height="100dp"
+        android:background="@drawable/button_border"
+        android:textColor="#ffffff"
+        android:textSize="60px"
+        android:textAllCaps="false"
+        android:layout_above="@+id/editText2"
+        android:layout_alignStart="@+id/callEmergency"
+        android:layout_marginBottom="85dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:width="1000dp"
+        android:textSize="5pt"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:background="@android:color/transparent"
+        android:text="This is the NHS non-emergency number."
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="18dp" />
+</RelativeLayout>
